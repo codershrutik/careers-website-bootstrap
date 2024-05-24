@@ -28,15 +28,62 @@
 </head>
 <body>
 
-  <div style = "font-size: 30px; height: 300px;"class="d-none d-sm-block d-md-flex p-3 bg-primary">
-    <div>Item 1</div>
-    <div>Item 2</div>
-    <div>Item 3</div>
-  </div>
-
-
   <!--NAVBAR-->
-  <div>Navbar</div>
+  <nav class="navbar navbar-expand-md bg-body-tertiary shadow-sm">
+    <div class="container-md">
+      <!-- LOGO -->
+      <a class="navbar-brand" href="#">
+        <img
+        id="logo"
+        alt="Jovian Logo"
+        src="https://i.imgur.com/JRA5Q8a.png"
+        height="30"
+        class="d-md-none"
+      />
+        <img
+        id="logo-with-text"
+        alt="Jovian Logo"
+        src="https://i.imgur.com/m1wXjqw.png"
+        height="30"
+        class="d-none d-md-inline"
+      />
+    </a>
+
+      </a>
+      <!-- Tuggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Programs</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Socials
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary ms-md-2" href="#" target="_blank">Sign In</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
   <!--ABOUT SECTION-->
   <div>About Jovian</div>
